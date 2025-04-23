@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+  background: url("washi-bg.jpg") repeat;
+  background-size: cover;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #a12e2e;
+  padding: 10px;
+  text-align: center;
+}
+
+.logo {
+  height: 60px;
+  max-width: 90%;
+}
+
+.hero {
+  text-align: center;
+  margin: 20px;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+}
+
+.intro {
+  text-align: center;
+  margin: 30px 15px;
+  font-size: 1.1rem;
+}
+
+.products {
+  padding: 20px;
+  text-align: center;
+}
+
+.product-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.product-list img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.shop-link {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.shop-button {
+  display: inline-block;
+  background: #a12e2e;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.shop-button:hover {
+  background: #7e2222;
+}
+
+footer {
+  background-color: #eee;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .product-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-list img {
+    width: 80%;
+    max-width: 300px;
+  }
+}
