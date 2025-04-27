@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mono Kura</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!--   ここから工事中ダイアログ -->
+  <div id="maintenance-overlay">
+  <div class="maintenance-box">
+    <h2>🚧 工事中 🚧</h2>
+    <p>ただいま商品一覧を整備中です。<br>
+       数日中に公開予定なのでお楽しみに！</p>
+    <button id="close-overlay">閉じる</button>
+  </div>
+</div>
+<!-- ここまで -->
+  <header>
+    <img src="monokura.logo.png" alt="Mono Kura ロゴ" class="logo" />
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="top-image.png" alt="メイン画像" class="hero-image" />
+      <h1>暮らしに遊び心を</h1>
+    </section>
+
+    <section class="intro">
+      <p>
+        Mono Kuraは、あなたの趣味とちょっとした遊び心をテーマにした日用雑貨のお店です。<br />
+        伝統と現代のライフスタイルをつなぐ、そんな商品を取り揃えています。
+      </p>
+    </section>
+    <section class="product-section">
+        <h2 class="section-title">おすすめアイテム</h2>
+        <div class="product-scroll">
+          <div class="product-card">
+            <img src="木製船.png" alt="商品1">
+            <p class="product-name">和風お香セット</p>
+            <p class="product-price">¥1,200</p>
+          </div>
+          <div class="product-card">
+            <img src="木製船.png" alt="商品2">
+            <p class="product-name">木製こけし</p>
+            <p class="product-price">¥2,500</p>
+          </div>
+          <!-- さらに商品追加 -->
+        </div>
+      </section>
+   
+
+    <section class="shop-link">
+      <a href="https://monokuralife.base.shop/" class="shop-button" target="_blank">BASEショップへ</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mono Kura</p>
+  </footer>
+<!--   ここから工事中ダイアログ -->
+  <script>
+document.getElementById('close-overlay')
+        .addEventListener('click',()=> {
+           document.getElementById('maintenance-overlay').style.display='none';
+});
+</script>
+<!-- ここまで -->
+</body>
+</html>
