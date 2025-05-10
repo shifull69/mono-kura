@@ -135,7 +135,7 @@ footer {
   font-weight: bold;
 }
 /* ここから工事中ダイアログコード */
-#maintenance-overlay{
+/* #maintenance-overlay{
   position:fixed; inset:0;
   background:rgba(0,0,0,.6);
   display:flex; justify-content:center; align-items:center;
@@ -159,7 +159,7 @@ footer {
   background:#8b2c2c; color:#fff; border:none; border-radius:6px;
   cursor:pointer; font-size:1rem;
 }
-@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}} */
 /* ここまで */
 .product-price {
   color: #b12704;
