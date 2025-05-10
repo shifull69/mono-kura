@@ -221,5 +221,17 @@ h2 {
   position: relative;
 }
 
+@media (max-width: 768px) {
+  .product-scroll {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-card {
+    min-width: 80%;
+  }
+}
+
+
 
 
