@@ -8,14 +8,14 @@
 </head>
 <body>
 <!--   ここから工事中ダイアログ -->
-  <div id="maintenance-overlay">
+<!--   <div id="maintenance-overlay">
   <div class="maintenance-box">
     <h2>🚧 工事中 🚧</h2>
     <p>ただいま商品一覧を整備中です。<br>
        数日中に公開予定なのでお楽しみに！</p>
     <button id="close-overlay">閉じる</button>
   </div>
-</div>
+</div> -->
 <!-- ここまで -->
   <header>
     <img src="monokura.logo.png" alt="Mono Kura ロゴ" class="logo" />
@@ -33,23 +33,36 @@
         伝統と現代のライフスタイルをつなぐ、そんな商品を取り揃えています。
       </p>
     </section>
-    <section class="product-section">
-        <h2 class="section-title">おすすめアイテム</h2>
-        <div class="product-scroll">
-          <div class="product-card">
-            <img src="木製船.png" alt="商品1">
-            <p class="product-name">和風お香セット</p>
-            <p class="product-price">¥1,200</p>
-          </div>
-          <div class="product-card">
-            <img src="木製船.png" alt="商品2">
-            <p class="product-name">木製こけし</p>
-            <p class="product-price">¥2,500</p>
-          </div>
-          <!-- さらに商品追加 -->
-        </div>
-      </section>
-   
+   <section class="section">
+  <h2>おすすめ商品</h2>
+  <div class="items-grid">
+    
+    <!-- 商品1 -->
+    <div class="item">
+      <img src="https://dummyimage.com/200x200/eee/aaa&text=商品1" alt="商品1">
+      <p>木製カトラリーセット</p>
+    </div>
+
+    <!-- 商品2 -->
+    <div class="item">
+      <img src="https://dummyimage.com/200x200/eee/aaa&text=商品2" alt="商品2">
+      <p>和柄ポーチ</p>
+    </div>
+
+    <!-- 商品3 -->
+    <div class="item">
+      <img src="https://dummyimage.com/200x200/eee/aaa&text=商品3" alt="商品3">
+      <p>藍染コースター</p>
+    </div>
+
+    <!-- ★ここにどんどん追加OK★ -->
+    <div class="item">
+      <img src="https://dummyimage.com/200x200/eee/aaa&text=商品4" alt="商品4">
+      <p>北欧風マグカップ</p>
+    </div>
+
+  </div>
+</section>
 
     <section class="shop-link">
       <a href="https://monokuralife.base.shop/" class="shop-button" target="_blank">BASEショップへ</a>
@@ -60,12 +73,12 @@
     <p>&copy; 2025 Mono Kura</p>
   </footer>
 <!--   ここから工事中ダイアログ -->
-  <script>
+<!--   <script>
 document.getElementById('close-overlay')
         .addEventListener('click',()=> {
            document.getElementById('maintenance-overlay').style.display='none';
 });
-</script>
+</script> -->
 <!-- ここまで -->
 </body>
 </html>
