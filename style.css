@@ -191,5 +191,35 @@ h2 {
   color: #a12e2e; 
 }
 
+/* バッジの基本デザイン */
+.badge {
+  position: absolute;
+  background: #e60000;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  border-radius: 20px;
+  top: 10px;
+  left: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* キラキラアニメーション */
+.sparkle {
+  animation: sparkleAnim 1s infinite alternate;
+}
+
+@keyframes sparkleAnim {
+  0% { transform: scale(1) rotate(0deg); opacity: 1; }
+  50% { transform: scale(1.2) rotate(10deg); opacity: 0.8; }
+  100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+
+/* 商品カードは relative にしてバッジと重なる */
+.product-card {
+  position: relative;
+}
+
 
 
