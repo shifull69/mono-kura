@@ -164,3 +164,12 @@ footer {
 .product-price {
   color: #b12704;
 }
+.items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
