@@ -1,69 +1,96 @@
 body {
   margin: 0;
-  font-family: 'Yu Gothic', sans-serif;
-  background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png'); /* 和紙風テクスチャ */
-  background-color: #fdfaf5;
-  color: #333;
-}
-header {
-  background-color: #8b0000;
-  padding: 20px;
-  text-align: center;
-  border-bottom: 1px solid #ccc;
-}
-header img {
-  max-width: 250px;
-  height: auto;
-}
-.catch {
-  font-size: 1.2rem;
-  margin-top: 10px;
-  color: #8b0000;
-}
-.main-image {
-  width: 100%;
-  max-height: 400px;
-  object-fit: cover;
-  display: block;
-}
-.section {
-  padding: 40px 20px;
-  text-align: center;
-}
-.section h2 {
-  color: #8b0000;
-}
-.items-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  margin-top: 20px;
-}
-.item {
-  background: #fff;
-  padding: 15px;
-  border-radius: 8px;
-  width: 200px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
-}
-.item img {
-  width: 100%;
-  border-radius: 6px;
-}
-footer {
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9rem;
-  color: #666;
-  background-color: #f7f4ef;
-  border-top: 1px solid #ddd;
-}
-body {
-  background-image: url('images/washi-background.jpg'); /* ←画像パスに応じて変えてね */
+  font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+  background: url("washi-bg.jpg") repeat;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+  color: #333;
+  line-height: 1.6;
 }
 
+header {
+  background-color: #a12e2e;
+  padding: 10px;
+  text-align: center;
+}
+
+.logo {
+  height: 60px;
+  max-width: 90%;
+}
+
+.hero {
+  text-align: center;
+  margin: 20px;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+}
+
+.intro {
+  text-align: center;
+  margin: 30px 15px;
+  font-size: 1.1rem;
+}
+
+.products {
+  padding: 20px;
+  text-align: center;
+}
+
+.product-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.product-list img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.shop-link {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.shop-button {
+  display: inline-block;
+  background: #a12e2e;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.shop-button:hover {
+  background: #7e2222;
+}
+
+footer {
+  background-color: #eee;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .product-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-list img {
+    width: 80%;
+    max-width: 300px;
+  }
+}
